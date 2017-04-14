@@ -3,64 +3,92 @@
 <head>
 	<meta charset="UTF=8">
 	<title></title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="default.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Fresca|IM+Fell+Great+Primer+SC|Katibeh" rel="stylesheet">
+
 </head>
 <body>
-	<div class="container u-full-width">
-		<nav>
-			<div class="navbar row">
-				<div class="navbar_icons offset-by-eight one columns">
-					<a href="#projects">Projects</a>
+	<!-- Full screen background -->
+	<div class="fullscreen-bg">
+		<video loop muted autoplay class="fullscreen-bg__video">
+			<source src="assets/herovideo.mp4" type="video/mp4">
+			</video>
+		</div>
+		<!--  -->
+		<!-- Hero Image -->
+		<div id="container u-full-width">
+			<div class="hero_content row">
+				<div class="offset-by-three six columns">
+					<h1 id="hero_name"> Nicholas Vaden </h1>
+					<p id="hero_description"> A Full Stack Web Developer</p>
 				</div>
-				<div class="navbar_icons two columns">
-					<a href="#projects">About Me</a>
+			</div>
+			<div class="banner">
+				<nav>
+					<div class="navbar row">
+						<div class="navbar_icons two columns" style="margin-left:10px">
+							<a href="#projects">Portfolio</a>	
+						</div>
+						<div class="navbar_icons two columns">
+							<a href="#projects">About</a>
+						</div>
+						<div class="navbar_icons two columns">
+							<a href="#contacts">Contact</a>
+						</div>
+					</div>
+				</nav>
+				<!--  -->
+			</div>
+			<div id="body_div">
+				<!-- Project Section   -->
+				<span id="projects"></span>
+				<div class="hero_content2 row">
+					<div class="hero_name offset-by-three six columns">
+						<div class="row u-full-witdh">
+							<!-- add on mouse over javascript description -->
+							<div class="four columns">
+								<h3 class="name">
+									<a href="https://github.com/nVaden" id="turbulence"> Turbulence </a>
+								</h3>
+							</div>
+							<div class="four columns">
+								<h3 class="name">
+									<a href="https://github.com/nVaden"> DelayedGram</a>
+								</h3>
+							</div>
+							<div class="four columns">
+								<h3 class="name">
+									<a href="https://github.com/nVaden"> JukeBox</a>
+								</h3>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="navbar_icons one column">
-					Contact
+				<!--  -->
+				<!-- Parallax Continued  -->
+				<div class="parallax2"></div>
+				<div class="hero_content row">
+					<div class="hero_name offset-by-three six columns">
+						<h1 class="name"> Want to connect? </h1>
+						<a href="https://github.com/nVaden" target="_blank">
+							<div class="fa fa-github fa-4x"></div>
+						</a>
+						<a href="https://www.linkedin.com/in/nvaden/" target="_blank">
+							<div class="fa fa-linkedin-square fa-4x" style="padding-left: 15px"></div>
+						</a>
+						<br/>
+						<br/>
+						<a href="mailto:vaden.nicholas@gmail.com"><button class="button-primary">Email</button></a>
+						<button class="button-primary" type="submit" onclick="window.open('assets/Nicholas_Vaden_Resume_03-30.pdf')">Resume</button>
+						<br/>
+					</div>
+					<span id="contacts"></span>
 				</div>
 			</div>
 		</div>
-	</nav>
-	<div class="hero_content row">
-		<div class="hero_name offset-by-three six columns">
-			<h1 class="name"> Nicholas Vaden </h1>
-			<p> A Back End Web Developer</p>
-		</div>
-	</div>
-	<div class="parallax"></div>
-	<span id="projects"><h2>Projects</h2></span>
-	<div class="hero_content2 row">
-		<div class="hero_name offset-by-three six columns">
-			<div class="row u-full-witdh">
-				<!-- add on mouse over javascript description -->
-				<div class="four columns" style="border:1px solid black">
-					<h3 class="name">
-						<a href="https://github.com/nVaden"> Turbulence </a>
-					</h3>
-				</div>
-				<div class="four columns" style="border:1px solid black">
-					<h3 class="name">
-						<a href="https://github.com/nVaden"> DelayedGram</a>
-					</h3>
-				</div>
-				<div class="four columns" style="border:1px solid black">
-					<h3 class="name">
-						<a href="https://github.com/nVaden"> JukeBox</a>
-					</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="parallax2"></div>
-	<div class="hero_content row">
-		<div class="hero_name offset-by-three six columns">
-			<h1 class="name"> Contact </h1>
-			<a href="mailto:vaden.nicholas@gmail.com">Email me here</a>
-		</div>
-	</div>
-</div>
-</body>
-<script src="main.js"></script>
-</html>
+	</body>
+	<script src="main.js"></script>
+	</html>

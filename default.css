@@ -1,56 +1,78 @@
 body {
-  background-color:rgba(10,85,120,.6);
-  margin: -5px;
+  font-family: 'IM Fell Great Primer SC', serif;
 }
-
+#projects {
+  text-align:center;
+  padding-top: 20px;
+  color:black;
+  font-weight:bolder;
+}
 .name {
   color: black;
   padding-top:15px;
 }
-.container {
-  border:1px solid;
-}
-.hero_name {
-  border: 1px solid black;
-  text-align:center;
-}
-.hero_content {
-  margin-top: 60px;
-  border: 1px solid black;
-  height: 200px;
-  background-color: rgba(0,0,0,.4);
+
+.navbar {
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:white;
+  color:black;
 }
 
-.hero_content2 {
-  margin-top: 10px;
-  border: 1px solid black;
-  height: 200px;
-  background-color: rgba(0,0,0,.4);
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
+.banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
+
+#hero_name {
+  padding-top:40px;
+  font-size:60px;
+  font-weight:bolder;
+  color: white;
+}
+
+.hero_content {
+  margin-top:150px;
+  text-align:center;
+  margin-bottom: 325px;
+}
+
+#hero_description {
+  font-size:50px;
+  font-family: 'Fresca', sans-serif;
+  margin-top:-20px;
+  color:black;
+}
+
 .navbar_icons {
   border:1px solid black;
+  border-radius:3px;
   text-align:center;
+  font-weight:bolder;
 }
+
 .parallax2 { 
-  background-image: url("001.jpg");
-  height: 400px; 
+  background-color: rgba(0,0,0,.7);
+  height: 600px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .8;
 }  
 
-.parallax { 
-  background-image: url("sky.jpg");
-  height: 200px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .8;
-}  
-/* Skeleton start ---*/
 .container {
   position: relative;
   width: 100%;
@@ -182,12 +204,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+–––––––––––––––––––––––––––––----- */
 a {
-  color: white; }
+  color: black; }
   a:hover {
-    color: red; }
+    color: black; }
 
+    a:active {
+      background-color: rgba(174,190,207,.7);
+    }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -224,7 +249,6 @@ input[type="button"] {
   input[type="reset"]:focus,
   input[type="button"]:focus {
     color: #333;
-    border-color: #888;
     outline: 0; }
     .button.button-primary,
     button.button-primary,
@@ -232,21 +256,21 @@ input[type="button"] {
     input[type="reset"].button-primary,
     input[type="button"].button-primary {
       color: #FFF;
-      background-color: #33C3F0;
-      border-color: #33C3F0; }
-      .button.button-primary:hover,
-      button.button-primary:hover,
-      input[type="submit"].button-primary:hover,
-      input[type="reset"].button-primary:hover,
-      input[type="button"].button-primary:hover,
-      .button.button-primary:focus,
-      button.button-primary:focus,
-      input[type="submit"].button-primary:focus,
-      input[type="reset"].button-primary:focus,
-      input[type="button"].button-primary:focus {
-        color: #FFF;
-        background-color: #1EAEDB;
-        border-color: #1EAEDB; }
+      background-color: black;
+    }
+    .button.button-primary:hover,
+    button.button-primary:hover,
+    input[type="submit"].button-primary:hover,
+    input[type="reset"].button-primary:hover,
+    input[type="button"].button-primary:hover,
+    .button.button-primary:focus,
+    button.button-primary:focus,
+    input[type="submit"].button-primary:focus,
+    input[type="reset"].button-primary:focus,
+    input[type="button"].button-primary:focus {
+      color: #FFF;
+      background-color: grey;
+    }
 
 
 /* Forms
@@ -442,3 +466,35 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}

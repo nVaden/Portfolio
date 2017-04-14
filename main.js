@@ -1,9 +1,23 @@
-function sendMail() {
-    var link = "mailto:me@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
+$(document).ready(function(){
 
-    window.location.href = link;
-}
+	$("a").on('click', function(event){
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 900, function(){
+				window.location.hash = hash;
+			});
+		};
+	});
+
+	$(window).scroll(function () { 
+		if ($(window).scrollTop() > 656) {
+			$('.navbar').addClass('navbar-fixed');
+		}
+		if ($(window).scrollTop() < 600) {
+			$('.navbar').removeClass('navbar-fixed');
+		}
+	});
+});
