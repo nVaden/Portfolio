@@ -95,12 +95,18 @@ a:-webkit-any-link {
   border: 2px groove rgb(39,142,117);
   border-radius: 5px;
   margin-top: 70px;
-  background-size: 463px 310px;
+  background-size: 459px 310px;
   background-repeat:no-repeat;
 }
 .turbulence {
   background-image:url("assets/turbulence1.jpg");
 }
+.projects_top:hover {
+  transition: .5s ease;
+  height:315px;
+  background-size:459px 315px;
+}
+
 .delayedgram {
   background-image:url("assets/delayedgram1.jpg");
 }
@@ -115,8 +121,13 @@ a:-webkit-any-link {
   border: 2px groove rgb(39,142,117);
   border-radius: 5px;
   margin-top: 40px;
-    background-size: 463px 310px;
+  background-size: 460px 310px;
   background-repeat:no-repeat;
+}
+.projects_box:hover {
+  transition: .5s ease;
+  height:315px;
+  background-size:461px 315px;
 }
 .about_photo {
   background-image: url("assets/Wedding1.jpg");
