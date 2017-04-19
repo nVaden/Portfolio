@@ -1,17 +1,10 @@
-body {
-  font-family: 'IM Fell Great Primer SC', serif;
-}
+
 #projects {
   text-align:center;
   padding-top: 20px;
   color:black;
   font-weight:bolder;
 }
-.name {
-  color: black;
-  padding-top:15px;
-}
-
 .navbar {
   padding-top:10px;
   padding-bottom:10px;
@@ -30,7 +23,7 @@ body {
   border:1px groove grey;
   border-radius:3px;
   text-align:center;
-  font-family: 'Fresca', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   font-size: 17px;
 }
@@ -39,7 +32,7 @@ a:-webkit-any-link {
 }
 
 .navbar_name {
-  font-family: 'Federant', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size:18px;
   background-color: rgba(5,5,5,.1);
   text-align:center;
@@ -63,6 +56,7 @@ a:-webkit-any-link {
   padding-top:40px;
   font-size:60px;
   font-weight:bolder;
+  font-family: 'Raleway', sans-serif;
   color: white;
 }
 
@@ -79,28 +73,65 @@ a:-webkit-any-link {
   color:black;
 }
 .parallax2 { 
-  background-color: rgba(0,0,0,.7);
-  height: 750px; 
+  background-color: rgba(255,255,255,.7);
+  height: 1000px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }  
 .about {
-  color: white;
+  color: rgb(39,142,117);
   border: 1px solid white;
   border-radius: 5px;
   margin-top: 90px;
   padding:5px;
-  font-size:30px;
+  font-size:27px;
+  font-family: 'Raleway', sans-serif;
+
+}
+.projects_top {
+  height: 300px;
+  border: 2px groove rgb(39,142,117);
+  border-radius: 5px;
+  margin-top: 70px;
+  background-size: 463px 310px;
+  background-repeat:no-repeat;
+}
+.turbulence {
+  background-image:url("assets/turbulence1.jpg");
+}
+.delayedgram {
+  background-image:url("assets/delayedgram1.jpg");
+}
+.jukebox {
+  background-image:url("assets/jukebox1.jpg");
+}
+.digitalclock {
+  background-image:url("assets/digitalclock.jpg");
+}
+.projects_box {
+  height: 300px;
+  border: 2px groove rgb(39,142,117);
+  border-radius: 5px;
+  margin-top: 40px;
+    background-size: 463px 310px;
+  background-repeat:no-repeat;
 }
 .about_photo {
-  background-color: white;
+  background-image: url("assets/Wedding1.jpg");
+  background-size: 460px 480px;
+  background-repeat:no-repeat;
   border: 1px solid black;
   height: 460px;
   width: 100px;
   margin-top:90px;
   border-radius: 5px;
+  border: 2px groove white;
+}
+#connect {
+  color: white;
+  padding-top:15px;
 }
 .container {
   position: relative;
