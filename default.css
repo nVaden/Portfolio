@@ -88,33 +88,26 @@ a:-webkit-any-link {
   padding:5px;
   font-size:27px;
   font-family: 'Raleway', sans-serif;
-
 }
+.about_photo {
+  background-image: url("assets/Wedding1.jpg");
+  background-size: 460px 480px;
+  background-repeat:no-repeat;
+  border: 1px solid black;
+  height: 480px;
+  width: 100px;
+  margin-top:90px;
+  border-radius: 5px;
+  border: 2px groove white;
+}
+
 .projects_top {
   height: 300px;
   border: 2px groove rgb(39,142,117);
   border-radius: 5px;
   margin-top: 70px;
-  background-size: 459px 310px;
+  background-size: 459px 296px;
   background-repeat:no-repeat;
-}
-.turbulence {
-  background-image:url("assets/turbulence1.jpg");
-}
-.projects_top:hover {
-  transition: .5s ease;
-  height:315px;
-  background-size:459px 315px;
-}
-
-.delayedgram {
-  background-image:url("assets/delayedgram1.jpg");
-}
-.jukebox {
-  background-image:url("assets/jukebox1.jpg");
-}
-.digitalclock {
-  background-image:url("assets/digitalclock.jpg");
 }
 .projects_box {
   height: 300px;
@@ -124,26 +117,77 @@ a:-webkit-any-link {
   background-size: 460px 310px;
   background-repeat:no-repeat;
 }
-.projects_box:hover {
+
+.middle {
+  opacity: 0;
   transition: .5s ease;
-  height:315px;
-  background-size:461px 315px;
 }
-.about_photo {
-  background-image: url("assets/Wedding1.jpg");
-  background-size: 460px 480px;
-  background-repeat:no-repeat;
-  border: 1px solid black;
-  height: 460px;
-  width: 100px;
-  margin-top:90px;
-  border-radius: 5px;
-  border: 2px groove white;
+.middle_link {
+  top:50%;
+}
+
+
+
+.turbulence {
+  background-image:url("assets/turbulence1.jpg");
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.turbulence:hover {
+  opacity:.3;
+}
+.turbulence:hover .middle {
+  opacity: 1;
+}
+
+.delayedgram {
+  background-image:url("assets/delayedgram1.jpg");
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.delayedgram:hover {
+  opacity:.3;
+}
+.delayedgram:hover .middle {
+  opacity: 1;
+}
+
+
+.digitalclock {
+  background-image:url("assets/digitalclock.jpg");
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.digitalclock:hover {
+  opacity:.3;
+}
+.digitalclock:hover .middle {
+  opacity: 1;
+}
+
+.jukebox {
+  background-image:url("assets/jukebox1.jpg");
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.jukebox:hover {
+  opacity:.3;
+}
+.jukebox:hover .middle{
+  opacity: 1;
 }
 #connect {
   color: white;
   padding-top:15px;
 }
+
+
+
+/*Skeleton!*/
 .container {
   position: relative;
   width: 100%;
@@ -280,10 +324,14 @@ a {
   color: black; }
   a:hover {
     color: black; }
+    .middle a{
+      color:white; }
+      .middle a:hover {
+        color:white; }
 
-    a:active {
-      background-color: rgba(174,190,207,.7);
-    }
+        a:active {
+          background-color: rgba(174,190,207,.7);
+        }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
