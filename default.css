@@ -27,10 +27,6 @@
   font-weight: bolder;
   font-size: 17px;
 }
-a:-webkit-any-link {
-  text-decoration: none;
-}
-
 .navbar_name {
   font-family: 'Raleway', sans-serif;
   font-size:18px;
@@ -73,7 +69,7 @@ a:-webkit-any-link {
   color:black;
 }
 .parallax2 { 
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255,255,255,.9);
   height: 1000px; 
   background-attachment: fixed;
   background-position: center;
@@ -121,12 +117,14 @@ a:-webkit-any-link {
 .middle {
   opacity: 0;
   transition: .5s ease;
+  backface-visibility: hidden;
+  margin-top:250px;
 }
 .middle_link {
-  top:50%;
+  background-color: black;
+  border:1px groove white;
+  padding: 16px 32px;
 }
-
-
 
 .turbulence {
   background-image:url("assets/turbulence1.jpg");
@@ -134,11 +132,17 @@ a:-webkit-any-link {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.turbulence:hover {
-  opacity:.3;
-}
-.turbulence:hover .middle {
+.projects_top:hover .middle {
   opacity: 1;
+}
+.projects_top:hover {
+  opacity: .8;
+}
+.projects_box:hover .middle {
+  opacity: 1;
+}
+.projects_box:hover {
+  opacity: .8;
 }
 
 .delayedgram {
@@ -147,25 +151,12 @@ a:-webkit-any-link {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.delayedgram:hover {
-  opacity:.3;
-}
-.delayedgram:hover .middle {
-  opacity: 1;
-}
-
 
 .digitalclock {
   background-image:url("assets/digitalclock.jpg");
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-}
-.digitalclock:hover {
-  opacity:.3;
-}
-.digitalclock:hover .middle {
-  opacity: 1;
 }
 
 .jukebox {
@@ -174,12 +165,7 @@ a:-webkit-any-link {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.jukebox:hover {
-  opacity:.3;
-}
-.jukebox:hover .middle{
-  opacity: 1;
-}
+
 #connect {
   color: white;
   padding-top:15px;
@@ -616,4 +602,8 @@ there.
     width: 300%;
     left: -100%;
   }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
