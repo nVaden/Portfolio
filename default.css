@@ -144,7 +144,9 @@
 .projects_box:hover {
   opacity: .8;
 }
-
+.about_title {
+  margin-bottom:-7px;
+}
 .delayedgram {
   background-image:url("assets/delayedgram1.JPG");
   opacity: 1;
